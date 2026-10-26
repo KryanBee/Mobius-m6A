@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "kind": "portable_fixed_hybrid_recipe",
+  "label_rule": "label_original > 0",
+  "minimum_reads": 20,
+  "sequence_encoding": "seven-base positional one-hot (28 columns)",
+  "encoder": {
+    "fixed_steps": 18,
+    "config": {
+      "model": "bag_network",
+      "seed": 1101,
+      "threads": 1,
+      "class_weight": "none",
+      "read_normalization": "motif_z_v1",
+      "params": {
+        "hidden_dims": [32, 16],
+        "site_hidden_dims": [16],
+        "dropout": 0.1,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "batch_sites": 32,
+        "batch_reads": 20000
+      }
+    }
+  },
+  "component": {
+    "fixed_steps": 269,
+    "config": {
+      "model": "embedding_xgboost",
+      "seed": 1101,
+      "threads": 1,
+      "class_weight": "none",
+      "feature_recipe": "readstats_context_v1",
+      "exclude_feature_groups": ["log_dwell_summaries"],
+      "params": {
+        "max_depth": 4,
+        "min_child_weight": 5.0,
+        "learning_rate": 0.05,
+        "n_estimators": 269,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "gamma": 0.0
+      }
+    }
+  }
+}

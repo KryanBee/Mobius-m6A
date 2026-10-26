@@ -1,0 +1,9 @@
+{
+  "bundle.json": "27cacc938a119bda6833daf7d6ca8df7139f1758eeaa7107c6f4fee1236e76f2",
+  "encoder/bundle.json": "ce8c610984b79f1c018e70bcf3c0631b534586da2d8260f5b0931993736afdf6",
+  "encoder/read_motif_reference.json": "b1e426537bd4c589330d18012be9f04673984bd053160023d4f84a45ed00be3e",
+  "encoder/weights.pt": "cc19adb41e15470345cd0c159c9dc4a3cab3fb0b74e783ec6624f34499eb5923",
+  "feature_recipe.json": "00fe3a2af359775d6cca5d056f3cfb47dc9470b27f8df2ebb7c01e829ccdc04f",
+  "motif_reference.json": "979c1912da4d228ea30f5f3a435080de182ab38dc73fbba8541518407737c0f4",
+  "trees.ubj": "e975120ff3c41110222737e50cbbc232e244d0857f91e0b20e39b91a72142e50"
+}

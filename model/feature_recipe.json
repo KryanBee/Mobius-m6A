@@ -1,0 +1,3468 @@
+{
+  "schema_version": 1,
+  "recipe": "readstats_context_v1",
+  "exclude_feature_groups": [
+    "log_dwell_summaries"
+  ],
+  "numeric_features": [
+    "dwell_time_minus1__mean",
+    "dwell_time_minus1__median",
+    "dwell_time_minus1__sd",
+    "dwell_time_minus1__p10",
+    "dwell_time_minus1__p25",
+    "dwell_time_minus1__p75",
+    "dwell_time_minus1__p90",
+    "dwell_time_minus1__iqr",
+    "dwell_time_minus1__mad",
+    "dwell_time_minus1__tail_asymmetry",
+    "dwell_time_minus1__min",
+    "dwell_time_minus1__max",
+    "dwell_time_minus1__skewness",
+    "dwell_time_minus1__excess_kurtosis",
+    "signal_sd_minus1__mean",
+    "signal_sd_minus1__median",
+    "signal_sd_minus1__sd",
+    "signal_sd_minus1__p10",
+    "signal_sd_minus1__p25",
+    "signal_sd_minus1__p75",
+    "signal_sd_minus1__p90",
+    "signal_sd_minus1__iqr",
+    "signal_sd_minus1__mad",
+    "signal_sd_minus1__tail_asymmetry",
+    "signal_sd_minus1__min",
+    "signal_sd_minus1__max",
+    "signal_sd_minus1__skewness",
+    "signal_sd_minus1__excess_kurtosis",
+    "signal_mean_minus1__mean",
+    "signal_mean_minus1__median",
+    "signal_mean_minus1__sd",
+    "signal_mean_minus1__p10",
+    "signal_mean_minus1__p25",
+    "signal_mean_minus1__p75",
+    "signal_mean_minus1__p90",
+    "signal_mean_minus1__iqr",
+    "signal_mean_minus1__mad",
+    "signal_mean_minus1__tail_asymmetry",
+    "signal_mean_minus1__min",
+    "signal_mean_minus1__max",
+    "signal_mean_minus1__skewness",
+    "signal_mean_minus1__excess_kurtosis",
+    "dwell_time_center__mean",
+    "dwell_time_center__median",
+    "dwell_time_center__sd",
+    "dwell_time_center__p10",
+    "dwell_time_center__p25",
+    "dwell_time_center__p75",
+    "dwell_time_center__p90",
+    "dwell_time_center__iqr",
+    "dwell_time_center__mad",
+    "dwell_time_center__tail_asymmetry",
+    "dwell_time_center__min",
+    "dwell_time_center__max",
+    "dwell_time_center__skewness",
+    "dwell_time_center__excess_kurtosis",
+    "signal_sd_center__mean",
+    "signal_sd_center__median",
+    "signal_sd_center__sd",
+    "signal_sd_center__p10",
+    "signal_sd_center__p25",
+    "signal_sd_center__p75",
+    "signal_sd_center__p90",
+    "signal_sd_center__iqr",
+    "signal_sd_center__mad",
+    "signal_sd_center__tail_asymmetry",
+    "signal_sd_center__min",
+    "signal_sd_center__max",
+    "signal_sd_center__skewness",
+    "signal_sd_center__excess_kurtosis",
+    "signal_mean_center__mean",
+    "signal_mean_center__median",
+    "signal_mean_center__sd",
+    "signal_mean_center__p10",
+    "signal_mean_center__p25",
+    "signal_mean_center__p75",
+    "signal_mean_center__p90",
+    "signal_mean_center__iqr",
+    "signal_mean_center__mad",
+    "signal_mean_center__tail_asymmetry",
+    "signal_mean_center__min",
+    "signal_mean_center__max",
+    "signal_mean_center__skewness",
+    "signal_mean_center__excess_kurtosis",
+    "dwell_time_plus1__mean",
+    "dwell_time_plus1__median",
+    "dwell_time_plus1__sd",
+    "dwell_time_plus1__p10",
+    "dwell_time_plus1__p25",
+    "dwell_time_plus1__p75",
+    "dwell_time_plus1__p90",
+    "dwell_time_plus1__iqr",
+    "dwell_time_plus1__mad",
+    "dwell_time_plus1__tail_asymmetry",
+    "dwell_time_plus1__min",
+    "dwell_time_plus1__max",
+    "dwell_time_plus1__skewness",
+    "dwell_time_plus1__excess_kurtosis",
+    "signal_sd_plus1__mean",
+    "signal_sd_plus1__median",
+    "signal_sd_plus1__sd",
+    "signal_sd_plus1__p10",
+    "signal_sd_plus1__p25",
+    "signal_sd_plus1__p75",
+    "signal_sd_plus1__p90",
+    "signal_sd_plus1__iqr",
+    "signal_sd_plus1__mad",
+    "signal_sd_plus1__tail_asymmetry",
+    "signal_sd_plus1__min",
+    "signal_sd_plus1__max",
+    "signal_sd_plus1__skewness",
+    "signal_sd_plus1__excess_kurtosis",
+    "signal_mean_plus1__mean",
+    "signal_mean_plus1__median",
+    "signal_mean_plus1__sd",
+    "signal_mean_plus1__p10",
+    "signal_mean_plus1__p25",
+    "signal_mean_plus1__p75",
+    "signal_mean_plus1__p90",
+    "signal_mean_plus1__iqr",
+    "signal_mean_plus1__mad",
+    "signal_mean_plus1__tail_asymmetry",
+    "signal_mean_plus1__min",
+    "signal_mean_plus1__max",
+    "signal_mean_plus1__skewness",
+    "signal_mean_plus1__excess_kurtosis",
+    "corr__signal_mean_minus1__log10_dwell_time_minus1",
+    "corr__signal_mean_minus1__signal_sd_minus1",
+    "corr__signal_sd_minus1__log10_dwell_time_minus1",
+    "corr__signal_mean_center__log10_dwell_time_center",
+    "corr__signal_mean_center__signal_sd_center",
+    "corr__signal_sd_center__log10_dwell_time_center",
+    "corr__signal_mean_plus1__log10_dwell_time_plus1",
+    "corr__signal_mean_plus1__signal_sd_plus1",
+    "corr__signal_sd_plus1__log10_dwell_time_plus1",
+    "corr__log10_dwell_time_minus1__log10_dwell_time_center",
+    "corr__log10_dwell_time_minus1__log10_dwell_time_plus1",
+    "corr__log10_dwell_time_center__log10_dwell_time_plus1",
+    "corr__signal_sd_minus1__signal_sd_center",
+    "corr__signal_sd_minus1__signal_sd_plus1",
+    "corr__signal_sd_center__signal_sd_plus1",
+    "corr__signal_mean_minus1__signal_mean_center",
+    "corr__signal_mean_minus1__signal_mean_plus1",
+    "corr__signal_mean_center__signal_mean_plus1",
+    "contrast_raw__dwell_time__center_vs_flanks__mean",
+    "contrast_raw__dwell_time__center_vs_flanks__median",
+    "contrast_raw__dwell_time__center_vs_flanks__sd",
+    "contrast_raw__dwell_time__center_vs_flanks__p10",
+    "contrast_raw__dwell_time__center_vs_flanks__p90",
+    "contrast_raw__dwell_time__center_vs_flanks__iqr",
+    "contrast_raw__dwell_time__right_minus_left__mean",
+    "contrast_raw__dwell_time__right_minus_left__median",
+    "contrast_raw__dwell_time__right_minus_left__sd",
+    "contrast_raw__dwell_time__right_minus_left__p10",
+    "contrast_raw__dwell_time__right_minus_left__p90",
+    "contrast_raw__dwell_time__right_minus_left__iqr",
+    "contrast_raw__signal_sd__center_vs_flanks__mean",
+    "contrast_raw__signal_sd__center_vs_flanks__median",
+    "contrast_raw__signal_sd__center_vs_flanks__sd",
+    "contrast_raw__signal_sd__center_vs_flanks__p10",
+    "contrast_raw__signal_sd__center_vs_flanks__p90",
+    "contrast_raw__signal_sd__center_vs_flanks__iqr",
+    "contrast_raw__signal_sd__right_minus_left__mean",
+    "contrast_raw__signal_sd__right_minus_left__median",
+    "contrast_raw__signal_sd__right_minus_left__sd",
+    "contrast_raw__signal_sd__right_minus_left__p10",
+    "contrast_raw__signal_sd__right_minus_left__p90",
+    "contrast_raw__signal_sd__right_minus_left__iqr",
+    "contrast_raw__signal_mean__center_vs_flanks__mean",
+    "contrast_raw__signal_mean__center_vs_flanks__median",
+    "contrast_raw__signal_mean__center_vs_flanks__sd",
+    "contrast_raw__signal_mean__center_vs_flanks__p10",
+    "contrast_raw__signal_mean__center_vs_flanks__p90",
+    "contrast_raw__signal_mean__center_vs_flanks__iqr",
+    "contrast_raw__signal_mean__right_minus_left__mean",
+    "contrast_raw__signal_mean__right_minus_left__median",
+    "contrast_raw__signal_mean__right_minus_left__sd",
+    "contrast_raw__signal_mean__right_minus_left__p10",
+    "contrast_raw__signal_mean__right_minus_left__p90",
+    "contrast_raw__signal_mean__right_minus_left__iqr",
+    "contrast_motif_z__dwell_time__center_vs_flanks__mean",
+    "contrast_motif_z__dwell_time__center_vs_flanks__median",
+    "contrast_motif_z__dwell_time__center_vs_flanks__sd",
+    "contrast_motif_z__dwell_time__center_vs_flanks__p10",
+    "contrast_motif_z__dwell_time__center_vs_flanks__p90",
+    "contrast_motif_z__dwell_time__center_vs_flanks__iqr",
+    "contrast_motif_z__dwell_time__right_minus_left__mean",
+    "contrast_motif_z__dwell_time__right_minus_left__median",
+    "contrast_motif_z__dwell_time__right_minus_left__sd",
+    "contrast_motif_z__dwell_time__right_minus_left__p10",
+    "contrast_motif_z__dwell_time__right_minus_left__p90",
+    "contrast_motif_z__dwell_time__right_minus_left__iqr",
+    "contrast_motif_z__signal_sd__center_vs_flanks__mean",
+    "contrast_motif_z__signal_sd__center_vs_flanks__median",
+    "contrast_motif_z__signal_sd__center_vs_flanks__sd",
+    "contrast_motif_z__signal_sd__center_vs_flanks__p10",
+    "contrast_motif_z__signal_sd__center_vs_flanks__p90",
+    "contrast_motif_z__signal_sd__center_vs_flanks__iqr",
+    "contrast_motif_z__signal_sd__right_minus_left__mean",
+    "contrast_motif_z__signal_sd__right_minus_left__median",
+    "contrast_motif_z__signal_sd__right_minus_left__sd",
+    "contrast_motif_z__signal_sd__right_minus_left__p10",
+    "contrast_motif_z__signal_sd__right_minus_left__p90",
+    "contrast_motif_z__signal_sd__right_minus_left__iqr",
+    "contrast_motif_z__signal_mean__center_vs_flanks__mean",
+    "contrast_motif_z__signal_mean__center_vs_flanks__median",
+    "contrast_motif_z__signal_mean__center_vs_flanks__sd",
+    "contrast_motif_z__signal_mean__center_vs_flanks__p10",
+    "contrast_motif_z__signal_mean__center_vs_flanks__p90",
+    "contrast_motif_z__signal_mean__center_vs_flanks__iqr",
+    "contrast_motif_z__signal_mean__right_minus_left__mean",
+    "contrast_motif_z__signal_mean__right_minus_left__median",
+    "contrast_motif_z__signal_mean__right_minus_left__sd",
+    "contrast_motif_z__signal_mean__right_minus_left__p10",
+    "contrast_motif_z__signal_mean__right_minus_left__p90",
+    "contrast_motif_z__signal_mean__right_minus_left__iqr",
+    "motif_z__dwell_time_minus1__mean",
+    "motif_z__dwell_time_minus1__median",
+    "motif_z__dwell_time_minus1__sd",
+    "motif_z__dwell_time_minus1__p10",
+    "motif_z__dwell_time_minus1__p90",
+    "motif_z__dwell_time_minus1__fraction_below_m1",
+    "motif_z__dwell_time_minus1__fraction_above_p1",
+    "motif_z__dwell_time_minus1__fraction_above_p2",
+    "motif_z__signal_sd_minus1__mean",
+    "motif_z__signal_sd_minus1__median",
+    "motif_z__signal_sd_minus1__sd",
+    "motif_z__signal_sd_minus1__p10",
+    "motif_z__signal_sd_minus1__p90",
+    "motif_z__signal_sd_minus1__fraction_below_m1",
+    "motif_z__signal_sd_minus1__fraction_above_p1",
+    "motif_z__signal_sd_minus1__fraction_below_m2",
+    "motif_z__signal_sd_minus1__fraction_above_p2",
+    "motif_z__signal_mean_minus1__mean",
+    "motif_z__signal_mean_minus1__median",
+    "motif_z__signal_mean_minus1__sd",
+    "motif_z__signal_mean_minus1__p10",
+    "motif_z__signal_mean_minus1__p90",
+    "motif_z__signal_mean_minus1__fraction_below_m1",
+    "motif_z__signal_mean_minus1__fraction_above_p1",
+    "motif_z__signal_mean_minus1__fraction_below_m2",
+    "motif_z__signal_mean_minus1__fraction_above_p2",
+    "motif_z__dwell_time_center__mean",
+    "motif_z__dwell_time_center__median",
+    "motif_z__dwell_time_center__sd",
+    "motif_z__dwell_time_center__p10",
+    "motif_z__dwell_time_center__p90",
+    "motif_z__dwell_time_center__fraction_below_m1",
+    "motif_z__dwell_time_center__fraction_above_p1",
+    "motif_z__dwell_time_center__fraction_above_p2",
+    "motif_z__signal_sd_center__mean",
+    "motif_z__signal_sd_center__median",
+    "motif_z__signal_sd_center__sd",
+    "motif_z__signal_sd_center__p10",
+    "motif_z__signal_sd_center__p90",
+    "motif_z__signal_sd_center__fraction_below_m1",
+    "motif_z__signal_sd_center__fraction_above_p1",
+    "motif_z__signal_sd_center__fraction_below_m2",
+    "motif_z__signal_sd_center__fraction_above_p2",
+    "motif_z__signal_mean_center__mean",
+    "motif_z__signal_mean_center__median",
+    "motif_z__signal_mean_center__sd",
+    "motif_z__signal_mean_center__p10",
+    "motif_z__signal_mean_center__p90",
+    "motif_z__signal_mean_center__fraction_below_m1",
+    "motif_z__signal_mean_center__fraction_above_p1",
+    "motif_z__signal_mean_center__fraction_below_m2",
+    "motif_z__signal_mean_center__fraction_above_p2",
+    "motif_z__dwell_time_plus1__mean",
+    "motif_z__dwell_time_plus1__median",
+    "motif_z__dwell_time_plus1__sd",
+    "motif_z__dwell_time_plus1__p10",
+    "motif_z__dwell_time_plus1__p90",
+    "motif_z__dwell_time_plus1__fraction_below_m1",
+    "motif_z__dwell_time_plus1__fraction_above_p1",
+    "motif_z__dwell_time_plus1__fraction_above_p2",
+    "motif_z__signal_sd_plus1__mean",
+    "motif_z__signal_sd_plus1__median",
+    "motif_z__signal_sd_plus1__sd",
+    "motif_z__signal_sd_plus1__p10",
+    "motif_z__signal_sd_plus1__p90",
+    "motif_z__signal_sd_plus1__fraction_below_m1",
+    "motif_z__signal_sd_plus1__fraction_above_p1",
+    "motif_z__signal_sd_plus1__fraction_below_m2",
+    "motif_z__signal_sd_plus1__fraction_above_p2",
+    "motif_z__signal_mean_plus1__mean",
+    "motif_z__signal_mean_plus1__median",
+    "motif_z__signal_mean_plus1__sd",
+    "motif_z__signal_mean_plus1__p10",
+    "motif_z__signal_mean_plus1__p90",
+    "motif_z__signal_mean_plus1__fraction_below_m1",
+    "motif_z__signal_mean_plus1__fraction_above_p1",
+    "motif_z__signal_mean_plus1__fraction_below_m2",
+    "motif_z__signal_mean_plus1__fraction_above_p2",
+    "dispersion_ratio__minus1",
+    "dispersion_ratio__center",
+    "dispersion_ratio__plus1"
+  ],
+  "features": [
+    {
+      "name": "dwell_time_minus1__mean",
+      "group": "baseline_mean9",
+      "selectors": [
+        "baseline_mean9"
+      ],
+      "formula": "mean(x) across reads of dwell_time_minus1",
+      "origin": "Existing baseline",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_minus1__median",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p50 across reads of dwell_time_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_minus1__sd",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "population SD (ddof=0) across reads of dwell_time_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_minus1__p10",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p10 across reads of dwell_time_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_minus1__p25",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p25 across reads of dwell_time_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_minus1__p75",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p75 across reads of dwell_time_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_minus1__p90",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p90 across reads of dwell_time_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_minus1__iqr",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "p75-p25 across reads of dwell_time_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_minus1__mad",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "median(abs(x-median(x))) across reads of dwell_time_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_minus1__tail_asymmetry",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "(p90+p10-2*median)/(p90-p10) across reads of dwell_time_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_minus1__min",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "min(x) across reads of dwell_time_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_minus1__max",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "max(x) across reads of dwell_time_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_minus1__skewness",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^3) across reads of dwell_time_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_minus1__excess_kurtosis",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^4)-3 across reads of dwell_time_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__mean",
+      "group": "baseline_mean9",
+      "selectors": [
+        "baseline_mean9"
+      ],
+      "formula": "mean(x) across reads of signal_sd_minus1",
+      "origin": "Existing baseline",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__median",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p50 across reads of signal_sd_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__sd",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "population SD (ddof=0) across reads of signal_sd_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__p10",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p10 across reads of signal_sd_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__p25",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p25 across reads of signal_sd_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__p75",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p75 across reads of signal_sd_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__p90",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p90 across reads of signal_sd_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__iqr",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "p75-p25 across reads of signal_sd_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__mad",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "median(abs(x-median(x))) across reads of signal_sd_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__tail_asymmetry",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "(p90+p10-2*median)/(p90-p10) across reads of signal_sd_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__min",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "min(x) across reads of signal_sd_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__max",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "max(x) across reads of signal_sd_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__skewness",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^3) across reads of signal_sd_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_minus1__excess_kurtosis",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^4)-3 across reads of signal_sd_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__mean",
+      "group": "baseline_mean9",
+      "selectors": [
+        "baseline_mean9"
+      ],
+      "formula": "mean(x) across reads of signal_mean_minus1",
+      "origin": "Existing baseline",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__median",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p50 across reads of signal_mean_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__sd",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "population SD (ddof=0) across reads of signal_mean_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__p10",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p10 across reads of signal_mean_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__p25",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p25 across reads of signal_mean_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__p75",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p75 across reads of signal_mean_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__p90",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p90 across reads of signal_mean_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__iqr",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "p75-p25 across reads of signal_mean_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__mad",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "median(abs(x-median(x))) across reads of signal_mean_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__tail_asymmetry",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "(p90+p10-2*median)/(p90-p10) across reads of signal_mean_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__min",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "min(x) across reads of signal_mean_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__max",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "max(x) across reads of signal_mean_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__skewness",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^3) across reads of signal_mean_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_minus1__excess_kurtosis",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^4)-3 across reads of signal_mean_minus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__mean",
+      "group": "baseline_mean9",
+      "selectors": [
+        "baseline_mean9"
+      ],
+      "formula": "mean(x) across reads of dwell_time_center",
+      "origin": "Existing baseline",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__median",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p50 across reads of dwell_time_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__sd",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "population SD (ddof=0) across reads of dwell_time_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__p10",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p10 across reads of dwell_time_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__p25",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p25 across reads of dwell_time_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__p75",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p75 across reads of dwell_time_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__p90",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p90 across reads of dwell_time_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__iqr",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "p75-p25 across reads of dwell_time_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__mad",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "median(abs(x-median(x))) across reads of dwell_time_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__tail_asymmetry",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "(p90+p10-2*median)/(p90-p10) across reads of dwell_time_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__min",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "min(x) across reads of dwell_time_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__max",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "max(x) across reads of dwell_time_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__skewness",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^3) across reads of dwell_time_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_center__excess_kurtosis",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^4)-3 across reads of dwell_time_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__mean",
+      "group": "baseline_mean9",
+      "selectors": [
+        "baseline_mean9"
+      ],
+      "formula": "mean(x) across reads of signal_sd_center",
+      "origin": "Existing baseline",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__median",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p50 across reads of signal_sd_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__sd",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "population SD (ddof=0) across reads of signal_sd_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__p10",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p10 across reads of signal_sd_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__p25",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p25 across reads of signal_sd_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__p75",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p75 across reads of signal_sd_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__p90",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p90 across reads of signal_sd_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__iqr",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "p75-p25 across reads of signal_sd_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__mad",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "median(abs(x-median(x))) across reads of signal_sd_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__tail_asymmetry",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "(p90+p10-2*median)/(p90-p10) across reads of signal_sd_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__min",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "min(x) across reads of signal_sd_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__max",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "max(x) across reads of signal_sd_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__skewness",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^3) across reads of signal_sd_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_center__excess_kurtosis",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^4)-3 across reads of signal_sd_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__mean",
+      "group": "baseline_mean9",
+      "selectors": [
+        "baseline_mean9"
+      ],
+      "formula": "mean(x) across reads of signal_mean_center",
+      "origin": "Existing baseline",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__median",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p50 across reads of signal_mean_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__sd",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "population SD (ddof=0) across reads of signal_mean_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__p10",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p10 across reads of signal_mean_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__p25",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p25 across reads of signal_mean_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__p75",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p75 across reads of signal_mean_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__p90",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p90 across reads of signal_mean_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__iqr",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "p75-p25 across reads of signal_mean_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__mad",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "median(abs(x-median(x))) across reads of signal_mean_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__tail_asymmetry",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "(p90+p10-2*median)/(p90-p10) across reads of signal_mean_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__min",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "min(x) across reads of signal_mean_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__max",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "max(x) across reads of signal_mean_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__skewness",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^3) across reads of signal_mean_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_center__excess_kurtosis",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^4)-3 across reads of signal_mean_center",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__mean",
+      "group": "baseline_mean9",
+      "selectors": [
+        "baseline_mean9"
+      ],
+      "formula": "mean(x) across reads of dwell_time_plus1",
+      "origin": "Existing baseline",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__median",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p50 across reads of dwell_time_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__sd",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "population SD (ddof=0) across reads of dwell_time_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__p10",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p10 across reads of dwell_time_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__p25",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p25 across reads of dwell_time_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__p75",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p75 across reads of dwell_time_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__p90",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p90 across reads of dwell_time_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__iqr",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "p75-p25 across reads of dwell_time_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__mad",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "median(abs(x-median(x))) across reads of dwell_time_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__tail_asymmetry",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "(p90+p10-2*median)/(p90-p10) across reads of dwell_time_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__min",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "min(x) across reads of dwell_time_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__max",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "max(x) across reads of dwell_time_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__skewness",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^3) across reads of dwell_time_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "dwell_time_plus1__excess_kurtosis",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^4)-3 across reads of dwell_time_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__mean",
+      "group": "baseline_mean9",
+      "selectors": [
+        "baseline_mean9"
+      ],
+      "formula": "mean(x) across reads of signal_sd_plus1",
+      "origin": "Existing baseline",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__median",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p50 across reads of signal_sd_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__sd",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "population SD (ddof=0) across reads of signal_sd_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__p10",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p10 across reads of signal_sd_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__p25",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p25 across reads of signal_sd_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__p75",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p75 across reads of signal_sd_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__p90",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p90 across reads of signal_sd_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__iqr",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "p75-p25 across reads of signal_sd_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__mad",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "median(abs(x-median(x))) across reads of signal_sd_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__tail_asymmetry",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "(p90+p10-2*median)/(p90-p10) across reads of signal_sd_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__min",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "min(x) across reads of signal_sd_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__max",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "max(x) across reads of signal_sd_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__skewness",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^3) across reads of signal_sd_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_sd_plus1__excess_kurtosis",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^4)-3 across reads of signal_sd_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__mean",
+      "group": "baseline_mean9",
+      "selectors": [
+        "baseline_mean9"
+      ],
+      "formula": "mean(x) across reads of signal_mean_plus1",
+      "origin": "Existing baseline",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__median",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p50 across reads of signal_mean_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__sd",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "population SD (ddof=0) across reads of signal_mean_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__p10",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p10 across reads of signal_mean_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__p25",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p25 across reads of signal_mean_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__p75",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p75 across reads of signal_mean_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__p90",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "linear p90 across reads of signal_mean_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__iqr",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "p75-p25 across reads of signal_mean_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__mad",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "median(abs(x-median(x))) across reads of signal_mean_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__tail_asymmetry",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution"
+      ],
+      "formula": "(p90+p10-2*median)/(p90-p10) across reads of signal_mean_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__min",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "min(x) across reads of signal_mean_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__max",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "max(x) across reads of signal_mean_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__skewness",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^3) across reads of signal_mean_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "signal_mean_plus1__excess_kurtosis",
+      "group": "read_distribution",
+      "selectors": [
+        "read_distribution",
+        "extremes_and_high_moments"
+      ],
+      "formula": "mean(((x-mean)/SD)^4)-3 across reads of signal_mean_plus1",
+      "origin": "m6Anet/xPore distribution motivation; our statistics, not their validated recipe",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_mean_minus1__log10_dwell_time_minus1",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_mean_minus1__signal_sd_minus1",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_sd_minus1__log10_dwell_time_minus1",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_mean_center__log10_dwell_time_center",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_mean_center__signal_sd_center",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_sd_center__log10_dwell_time_center",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_mean_plus1__log10_dwell_time_plus1",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_mean_plus1__signal_sd_plus1",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_sd_plus1__log10_dwell_time_plus1",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__log10_dwell_time_minus1__log10_dwell_time_center",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__log10_dwell_time_minus1__log10_dwell_time_plus1",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__log10_dwell_time_center__log10_dwell_time_plus1",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_sd_minus1__signal_sd_center",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_sd_minus1__signal_sd_plus1",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_sd_center__signal_sd_plus1",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_mean_minus1__signal_mean_center",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_mean_minus1__signal_mean_plus1",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "corr__signal_mean_center__signal_mean_plus1",
+      "group": "read_correlations",
+      "selectors": [
+        "read_correlations"
+      ],
+      "formula": "Pearson correlation across paired complete reads",
+      "origin": "Nanocompore joint-signal and local-window motivation; our correlations",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__dwell_time__center_vs_flanks__mean",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "mean of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__dwell_time__center_vs_flanks__median",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "median of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__dwell_time__center_vs_flanks__sd",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "sd of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__dwell_time__center_vs_flanks__p10",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "p10 of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__dwell_time__center_vs_flanks__p90",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "p90 of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__dwell_time__center_vs_flanks__iqr",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "iqr of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__dwell_time__right_minus_left__mean",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "mean of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__dwell_time__right_minus_left__median",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "median of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__dwell_time__right_minus_left__sd",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "sd of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__dwell_time__right_minus_left__p10",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "p10 of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__dwell_time__right_minus_left__p90",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "p90 of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__dwell_time__right_minus_left__iqr",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "iqr of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_sd__center_vs_flanks__mean",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "mean of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_sd__center_vs_flanks__median",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "median of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_sd__center_vs_flanks__sd",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "sd of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_sd__center_vs_flanks__p10",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "p10 of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_sd__center_vs_flanks__p90",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "p90 of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_sd__center_vs_flanks__iqr",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "iqr of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_sd__right_minus_left__mean",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "mean of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_sd__right_minus_left__median",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "median of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_sd__right_minus_left__sd",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "sd of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_sd__right_minus_left__p10",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "p10 of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_sd__right_minus_left__p90",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "p90 of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_sd__right_minus_left__iqr",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "iqr of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_mean__center_vs_flanks__mean",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "mean of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_mean__center_vs_flanks__median",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "median of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_mean__center_vs_flanks__sd",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "sd of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_mean__center_vs_flanks__p10",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "p10 of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_mean__center_vs_flanks__p90",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "p90 of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_mean__center_vs_flanks__iqr",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "iqr of raw per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_mean__right_minus_left__mean",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "mean of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_mean__right_minus_left__median",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "median of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_mean__right_minus_left__sd",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "sd of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_mean__right_minus_left__p10",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "p10 of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_mean__right_minus_left__p90",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "p90 of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_raw__signal_mean__right_minus_left__iqr",
+      "group": "raw_window_contrasts",
+      "selectors": [
+        "raw_window_contrasts"
+      ],
+      "formula": "iqr of raw per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": false
+    },
+    {
+      "name": "contrast_motif_z__dwell_time__center_vs_flanks__mean",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "mean of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__dwell_time__center_vs_flanks__median",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "median of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__dwell_time__center_vs_flanks__sd",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "sd of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__dwell_time__center_vs_flanks__p10",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "p10 of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__dwell_time__center_vs_flanks__p90",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "p90 of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__dwell_time__center_vs_flanks__iqr",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "iqr of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__dwell_time__right_minus_left__mean",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "mean of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__dwell_time__right_minus_left__median",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "median of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__dwell_time__right_minus_left__sd",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "sd of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__dwell_time__right_minus_left__p10",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "p10 of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__dwell_time__right_minus_left__p90",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "p90 of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__dwell_time__right_minus_left__iqr",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "iqr of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_sd__center_vs_flanks__mean",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "mean of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_sd__center_vs_flanks__median",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "median of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_sd__center_vs_flanks__sd",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "sd of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_sd__center_vs_flanks__p10",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "p10 of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_sd__center_vs_flanks__p90",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "p90 of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_sd__center_vs_flanks__iqr",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "iqr of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_sd__right_minus_left__mean",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "mean of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_sd__right_minus_left__median",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "median of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_sd__right_minus_left__sd",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "sd of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_sd__right_minus_left__p10",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "p10 of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_sd__right_minus_left__p90",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "p90 of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_sd__right_minus_left__iqr",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "iqr of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_mean__center_vs_flanks__mean",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "mean of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_mean__center_vs_flanks__median",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "median of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_mean__center_vs_flanks__sd",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "sd of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_mean__center_vs_flanks__p10",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "p10 of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_mean__center_vs_flanks__p90",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "p90 of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_mean__center_vs_flanks__iqr",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "iqr of motif_z per-read center-(left+right)/2",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_mean__right_minus_left__mean",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "mean of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_mean__right_minus_left__median",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "median of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_mean__right_minus_left__sd",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "sd of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_mean__right_minus_left__p10",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "p10 of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_mean__right_minus_left__p90",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "p90 of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "contrast_motif_z__signal_mean__right_minus_left__iqr",
+      "group": "motif_window_contrasts",
+      "selectors": [
+        "motif_window_contrasts",
+        "motif_features"
+      ],
+      "formula": "iqr of motif_z per-read right-left",
+      "origin": "m6Anet/Nanocompore neighboring-window motivation; our contrasts",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_minus1__mean",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "mean of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_minus1__median",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "median of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_minus1__sd",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "sd of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_minus1__p10",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p10 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_minus1__p90",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p90 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_minus1__fraction_below_m1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_minus1__fraction_above_p1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_minus1__fraction_above_p2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_minus1__mean",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "mean of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_minus1__median",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "median of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_minus1__sd",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "sd of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_minus1__p10",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p10 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_minus1__p90",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p90 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_minus1__fraction_below_m1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_minus1__fraction_above_p1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_minus1__fraction_below_m2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_minus1__fraction_above_p2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_minus1__mean",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "mean of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_minus1__median",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "median of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_minus1__sd",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "sd of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_minus1__p10",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p10 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_minus1__p90",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p90 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_minus1__fraction_below_m1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_minus1__fraction_above_p1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_minus1__fraction_below_m2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_minus1__fraction_above_p2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_center__mean",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "mean of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_center__median",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "median of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_center__sd",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "sd of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_center__p10",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p10 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_center__p90",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p90 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_center__fraction_below_m1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_center__fraction_above_p1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_center__fraction_above_p2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_center__mean",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "mean of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_center__median",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "median of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_center__sd",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "sd of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_center__p10",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p10 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_center__p90",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p90 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_center__fraction_below_m1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_center__fraction_above_p1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_center__fraction_below_m2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_center__fraction_above_p2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_center__mean",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "mean of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_center__median",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "median of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_center__sd",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "sd of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_center__p10",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p10 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_center__p90",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p90 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_center__fraction_below_m1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_center__fraction_above_p1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_center__fraction_below_m2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_center__fraction_above_p2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_plus1__mean",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "mean of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_plus1__median",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "median of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_plus1__sd",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "sd of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_plus1__p10",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p10 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_plus1__p90",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p90 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_plus1__fraction_below_m1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_plus1__fraction_above_p1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__dwell_time_plus1__fraction_above_p2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_plus1__mean",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "mean of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_plus1__median",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "median of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_plus1__sd",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "sd of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_plus1__p10",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p10 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_plus1__p90",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p90 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_plus1__fraction_below_m1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_plus1__fraction_above_p1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_plus1__fraction_below_m2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_sd_plus1__fraction_above_p2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_plus1__mean",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "mean of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_plus1__median",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "median of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_plus1__sd",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "sd of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_plus1__p10",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p10 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_plus1__p90",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "p90 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_plus1__fraction_below_m1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_plus1__fraction_above_p1",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p1 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_plus1__fraction_below_m2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_below_m2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "motif_z__signal_mean_plus1__fraction_above_p2",
+      "group": "motif_relative",
+      "selectors": [
+        "motif_relative",
+        "motif_features"
+      ],
+      "formula": "fraction_above_p2 of (x-mean_5mer)/SD_5mer; fixed strict +/-1,+/-2 tails",
+      "origin": "m6Anet normalization; our summaries/cutoffs; mixed background, not unmodified RNA",
+      "fitted_reference": true
+    },
+    {
+      "name": "dispersion_ratio__minus1",
+      "group": "dispersion_ratios",
+      "selectors": [
+        "dispersion_ratios"
+      ],
+      "formula": "across-read SD(signal_mean_minus1) / mean(signal_sd_minus1)",
+      "origin": "Exploratory ratio; not a calibrated SNR or modification fraction",
+      "fitted_reference": false
+    },
+    {
+      "name": "dispersion_ratio__center",
+      "group": "dispersion_ratios",
+      "selectors": [
+        "dispersion_ratios"
+      ],
+      "formula": "across-read SD(signal_mean_center) / mean(signal_sd_center)",
+      "origin": "Exploratory ratio; not a calibrated SNR or modification fraction",
+      "fitted_reference": false
+    },
+    {
+      "name": "dispersion_ratio__plus1",
+      "group": "dispersion_ratios",
+      "selectors": [
+        "dispersion_ratios"
+      ],
+      "formula": "across-read SD(signal_mean_plus1) / mean(signal_sd_plus1)",
+      "origin": "Exploratory ratio; not a calibrated SNR or modification fraction",
+      "fitted_reference": false
+    }
+  ],
+  "group_counts": {
+    "baseline_mean9": 9,
+    "read_distribution": 117,
+    "read_correlations": 18,
+    "raw_window_contrasts": 36,
+    "motif_window_contrasts": 36,
+    "motif_relative": 78,
+    "dispersion_ratios": 3
+  },
+  "available_selectors": {
+    "read_distribution": 117,
+    "extremes_and_high_moments": 48,
+    "log_dwell_summaries": 42,
+    "read_correlations": 18,
+    "raw_window_contrasts": 36,
+    "motif_window_contrasts": 36,
+    "motif_features": 114,
+    "motif_relative": 78,
+    "dispersion_ratios": 3
+  },
+  "fixed_omissions": [
+    "motif_z__dwell_time_minus1__fraction_below_m2",
+    "motif_z__dwell_time_center__fraction_below_m2",
+    "motif_z__dwell_time_plus1__fraction_below_m2"
+  ],
+  "omission_reason": "Three constant EDA columns excluded by the frozen v1 definition; not reselected per fold",
+  "policies": {
+    "undefined_selected_feature": "error",
+    "unseen_motif": "error",
+    "degenerate_reference": "error",
+    "nonpositive_dwell": "error",
+    "negative_signal_sd": "error",
+    "imputation": "none"
+  },
+  "sources": {
+    "m6anet": "https://www.nature.com/articles/s41592-022-01666-1",
+    "nanocompore": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8664944/",
+    "xpore_supplement": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41587-021-00949-w/MediaObjects/41587_2021_949_MOESM1_ESM.pdf"
+  },
+  "sequence_encoding": "base_onehot_v1"
+}
