@@ -31,15 +31,22 @@ Prediction evaluation requires no training or labels.
 
 ## Predict
 
-```bash
-./run.sh predict --input dataset.json.gz --output outputs/predictions.csv
-```
+**Coverage requirement:** Mobius was trained on sites with at least 20 reads,
+and the predictor uses the same minimum as a quality-control requirement.
+Performance below this coverage has not been established. Raw SG-NEx files may
+contain sites with fewer than 20 reads; encountering one stops prediction with
+an explanatory error, and no output CSV is written. Use `./run.sh test` for the
+supplied reproducibility example.
 
 To predict your own dataset, replace `dataset.json.gz` with the path to your
 existing signal file (`.json` or `.json.gz`), and replace `outputs/predictions.csv`
 with your chosen output CSV path. The input must follow the **Data format** below.
 The output file must not already exist. Paths may be absolute or relative to your
 current working directory.
+
+```bash
+./run.sh predict --input dataset.json.gz --output outputs/predictions.csv
+```
 
 The comma-separated CSV has this exact header:
 
@@ -84,7 +91,12 @@ matching signal and label sites. Training requires both classes overall.
 `gene_id` is optional and ignored. An optional `source_id` column must match its
 `--dataset` source. Supply labels separately.
 
-## Train
+## Train (optional)
+
+The included model is ready for prediction; training is optional. To fit a new
+model, replace `dataset.json.gz` and `labels.csv` with the paths to your existing
+signal and label files, and replace `training-output/my-model` with a new output
+directory.
 
 ```bash
 ./run.sh train --dataset data0 dataset.json.gz labels.csv --output training-output/my-model
