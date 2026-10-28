@@ -35,7 +35,13 @@ Prediction evaluation requires no training or labels.
 ./run.sh predict --input dataset.json.gz --output outputs/predictions.csv
 ```
 
-Choose a new output filename. The comma-separated CSV has this exact header:
+To predict your own dataset, replace `dataset.json.gz` with the path to your
+existing signal file (`.json` or `.json.gz`), and replace `outputs/predictions.csv`
+with your chosen output CSV path. The input must follow the **Data format** below.
+The output file must not already exist. Paths may be absolute or relative to your
+current working directory.
+
+The comma-separated CSV has this exact header:
 
 ```text
 transcript_id,transcript_position,score
